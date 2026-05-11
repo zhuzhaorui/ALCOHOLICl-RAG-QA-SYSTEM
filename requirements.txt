@@ -1,0 +1,13 @@
+torch>=2.0.0
+transformers==4.37.2
+langchain==0.1.16
+langchain-community==0.0.34
+pymupdf==1.24.3
+chromadb==0.4.24
+rank_bm25==0.2.2
+jieba==0.42.1
+sentence-transformers==2.7.0
+gradio==4.29.0
+python-dotenv==1.0.1
+icetk==0.0.4
+protobuf==4.25.3
