@@ -41,19 +41,19 @@
 
 1. 克隆项目
 git clone https://github.com/zhuzhaorui/ALCOHOLICl-RAG-QA-SYSTEM.git
-
 cd ALCOHOLICl-RAG-QA-SYSTEM
+
 3. 安装依赖环境
 pip install -r requirements.txt
-4. 放入私有文档
 
+4. 放入私有文档
 将酒类行业PDF文档放入 data/doc_raw/ 文件夹下。
 
-4. 执行文档预处理与分块
+5. 执行文档预处理与分块
 python document_processor.py  
-5. 构建向量知识库
+6. 构建向量知识库
 python retrieval_engine.py 
-6. 启动RAG问答交互
+7. 启动RAG问答交互
 python rag_chain.py
 输入问题即可基于私有文档进行专业问答。
 
