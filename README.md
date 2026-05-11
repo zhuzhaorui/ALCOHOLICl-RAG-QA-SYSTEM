@@ -55,6 +55,9 @@ python document_processor.py
 python retrieval_engine.py 
 7. 启动RAG问答交互
 python rag_chain.py
+8.启动 Web 界面
+python app.py
+浏览器自动打开 http://localhost:7860
 输入问题即可基于私有文档进行专业问答。
 
 运行说明
