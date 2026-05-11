@@ -50,14 +50,17 @@ pip install -r requirements.txt
 将酒类行业PDF文档放入 data/doc_raw/ 文件夹下。
 
 5. 执行文档预处理与分块
-python document_processor.py  
-6. 构建向量知识库
-python retrieval_engine.py 
-7. 启动RAG问答交互
+python document_processor.py
+ 
+7. 构建向量知识库
+python retrieval_engine.py
+
+8. 启动RAG问答交互
 python rag_chain.py
-8.启动 Web 界面
+
+9.启动 Web 界面
 python app.py
-浏览器自动打开 http://localhost:7860
+浏览器]打开 http://localhost:7860
 输入问题即可基于私有文档进行专业问答。
 
 运行说明
