@@ -39,37 +39,13 @@
 
 • 模块化代码设计，三步式运行流程，易修改与二次开发
 
-项目目录结构
-ALCOHOLICl-RAG-QA-SYSTEM/
-RAG-System-main/
-├── README.md                    # 项目说明
-├── main.py                      # 项目入口（索引构建+命令行测试）
-├── app.py                       # Gradio Web 界面
-├── config.py                    # 全局配置中心
-├── model/
-│   └── llm.py                   # ChatGLM2-6B 运行
-├── service/
-│   ├── document_processor.py    # 文档处理（PDF/TXT 批量处理）
-│   ├── retrieval_engine.py      # 混合检索引擎（Chroma+BM25）
-│   └── rag_chain.py             # RAG 完整流程
-├── utils/
-│   └── logger.py                # 日志工具
-├── data/
-│   ├── doc_raw/                 # 原始 PDF/TXT 文档存放处
-│   ├── result/                  # 文档分块结果
-│   └── chunks_for_bm25.pkl      # BM25 索引数据
-├── chroma_db/                   # Chroma 向量数据库
-├── model/
-│   └── chatglm2-6b/             # ChatGLM2-6B 模型存放处
-├── huggingface_cache/           # HuggingFace 模型缓存
-└── requirements.txt             # 依赖列表
-
 1. 克隆项目
 git clone https://github.com/zhuzhaorui/ALCOHOLICl-RAG-QA-SYSTEM.git
+
 cd ALCOHOLICl-RAG-QA-SYSTEM
-2. 安装依赖环境
+3. 安装依赖环境
 pip install -r requirements.txt
-3. 放入私有文档
+4. 放入私有文档
 
 将酒类行业PDF文档放入 data/doc_raw/ 文件夹下。
 
