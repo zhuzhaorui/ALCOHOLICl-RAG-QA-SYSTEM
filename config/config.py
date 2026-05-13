@@ -35,3 +35,15 @@ LENGTH_PENALTY = 1.0
 #  Gradio 界面配置 
 GRADIO_SERVER_PORT = 7860
 GRADIO_SHARE = False
+
+# ===================== 上下文压缩配置 =====================
+# 是否启用上下文压缩
+ENABLE_CONTEXT_COMPRESSION = True
+# 总上下文最大token数（超过则启动压缩）
+MAX_CONTEXT_TOKENS = 2000
+# 单个文档最大长度（超过则进行压缩）
+MAX_DOC_LENGTH = 600
+# 压缩后单条信息最大长度
+COMPRESSED_DOC_LENGTH = 100
+# 压缩失败时的截断长度
+FALLBACK_TRUNCATE_LENGTH = 300
