@@ -122,8 +122,6 @@ class RetrievalEngine:
 
     def bm25_search(self, query: str, top_k: int = TOP_K_RETRIEVE) -> List[Document]:
         """BM25 关键词检索（精确匹配）"""
-        if self.bm25 is None or self.texts is None:
-            raise ValueError("BM25 索引未加载，请先运行 build_index() 或 load_index()")
         
         logger.info(f"执行 BM25 检索: {query}")
         tokenized_query = jieba.lcut(query)
